@@ -6,6 +6,9 @@ body {
     box-sizing: border-box;
     font-family: poppins;
     color: #fff;
+    background: url("../img/Floresta com Nevoa.jpg") no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1 {
