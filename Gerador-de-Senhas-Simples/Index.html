@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gerador de Senhas Simples</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script src="js/Index.js"></script>
+
+
+    <body>
+        <div class="box">
+            <div class="result-container">
+                <textarea id="PasswordResult"></textarea>
+            </div>
+        
+            <div class="settings">
+                <div class="setting">
+                    <label>Tamanho da Senha</label>
+                    <input type="number" id="Passwordlength" min="4" max="28" value="14" />
+                </div>
+                
+                <div class="setting">
+                    <label>Incluir Letras Maiúsculas</label>
+                    <input type="checkbox" id="uppercase" checked />
+                </div>
+    
+                <div class="setting">
+                    <label>Incluir Letras Minúsculas</label>
+                    <input type="checkbox" id="lowercase" checked />
+                </div>
+    
+                <div class="setting">
+                    <label>Incluir Simbolos</label>
+                    <input type="checkbox" id="symbols" checked />
+                </div>
+    
+                <div class="setting">
+                    <label>Incluir Numeros</label>
+                    <input type="checkbox" id="numbers" checked />
+                </div>
+            </div>
+        
+            <div class="buttons">
+                <button class="btn btn-large" id="generateBtn">
+                    <i class="fas fa-key"></i> Gerar
+                </button>
+                <button class="btn" id="clipboardBtn">
+                    <i class="far fa-clipboard"></i> Copiar
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
